@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define freinput "input.txt","r",stdin
+#define freoutput "output.txt","w",stdout
+#define mp make_pair
+#define fi first
+#define sc second
+#define pb push_back
+#define ellapse printf("Time : %0.3lf\n",clock()*1.0/CLOCKS_PER_SEC);
+typedef long long ll;
+typedef unsigned long int uld;
+typedef vector<int> vi;
+typedef vector<string> vs;
+typedef pair<int,int> pii;
+struct comp {
+       bool operator() (int a,int b) {
+            return a>b;
+       }
+};
+int x,y;
+char arr[57][57];
+int pX,pY;
+int tot;
+void dfs(){
+
+}
+int main(){
+    #ifdef chris
+    freopen(freinput);
+    freopen(freoutput);
+    #endif // chris
+//    ios::sync_with_stdio(false);
+    while(scanf("%d %d",&x,&y)!= -1){
+        tot = 0;
+        for(int i = 0;i<x;i++){
+            for(int j = 0;j<y;j++){
+                cin>>arr[i][j];
+                visited[i][j]=0;
+                if(arr[i][j]=='P'){
+                    pX = i;
+                    pY = j;
+                }
+            }
+        }
+        dfs();
+    }
+}
+
