@@ -12,6 +12,5 @@ int main(){
             cout<<"NO"<<endl;
             arr.push_back(word);
         }
-
     }
 }
