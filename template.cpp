@@ -19,9 +19,9 @@ struct comp {
 };
 
 int main(){
-    #ifdef chris
-    freopen(freinput);
-    freopen(freoutput);
-    #endif // chris
-    ios::sync_with_stdio(false);
+//    #ifdef chris
+//    freopen(freinput);
+//    freopen(freoutput);
+//    #endif // chris
+//    ios::sync_with_stdio(false);
 }
