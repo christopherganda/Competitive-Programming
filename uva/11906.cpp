@@ -76,13 +76,14 @@ int main(){
         int odd=0,even =0 ;
         for(int j=0;j<r;j++){
             for(int k = 0;k<c;k++){
-                if(cnt[j][k]%2==0 && cnt[j][k]!=0)even++;
-                else if(cnt[j][k]%2==1) odd++;
+//                cout<<cnt[j][k]<<" ";
+                if(cnt[j][k]%2==0 && visited[j][k])even++;
+                else if(cnt[j][k]%2==1 && visited[j][k]) odd++;
 //                cout<<cnt[j][k]<<" ";
             }
+
 //            cout<<endl;
         }
-        if(even==0 && odd == 0 )even=1;
         printf("Case %d: %d %d\n",i,even,odd);
     }
 }
