@@ -40,7 +40,7 @@ void init(int n) { for (int i = 1; i <= n; i++) parent[i] = i, rankk[i] = 1; }
 
 int findd(int x) { return parent[x] == x ? x : parent[x] = findd(parent[x]); }
 
-void gabung(int a,int b) {
+void unionn(int a,int b) {
      int x = findd(a), y = findd(b);
      if (x != y) {
         if (rankk[x] < rankk[y]) swap(x, y);
